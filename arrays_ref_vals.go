@@ -6,6 +6,7 @@ func main() {
 	a := [4]string{"a", "b", "c", "d"}
 	for i, v := range a {
 		fmt.Printf("v: %T: %+v\n", v, v)
+		// %s	the uninterpreted bytes of the string or slice
 		fmt.Printf("Value[%s]\tAddress[%p] IndexAddr[%p]\n", v, &v, &a[i])
 
 		// NOTE: internal v is the copy of element value
